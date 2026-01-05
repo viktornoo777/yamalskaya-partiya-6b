@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  line-height: 1.7;
+}
+
+/* МЕНЮ */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.nav-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #1e90ff;
+}
+
+/* HERO */
+.hero {
+  padding: 140px 20px 80px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #1e90ff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ОБЩИЕ СЕКЦИИ */
+section {
+  max-width: 900px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* ОБРАЩЕНИЕ */
+.address h2 {
+  border-left: 6px solid #1e90ff;
+  padding-left: 12px;
+  text-transform: uppercase;
+}
+
+/* ЛОЗУНГИ */
+.slogans {
+  text-align: center;
+}
+
+.slogans p {
+  font-size: 22px;
+  margin: 6px 0;
+}
+
+/* РОЛИ */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 2px solid #1e90ff;
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* ДЕБАТЫ */
+.debates ul {
+  padding-left: 20px;
+}
+
+.debates-note {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* АНИМАЦИИ */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
